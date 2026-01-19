@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Science Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #764ba2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        section {
+            margin-bottom: 4rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .about {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .project-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .project-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-type {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .project-body {
+            padding: 1.5rem;
+        }
+        
+        .project-body p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 0.5rem 0;
+            color: #666;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .skill-category li:last-child {
+            border-bottom: none;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .contact-info a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Data Scientist & Researcher</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about">
+                <p>I'm a data scientist and researcher passionate about leveraging machine learning and data visualization to solve complex problems and generate actionable insights. My work spans predictive modeling, statistical analysis, and interactive data storytelling.</p>
+                <p>With expertise in both the technical and research aspects of data science, I bridge the gap between advanced analytics and real-world applications.</p>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-type">Machine Learning</div>
+                        <h3>Predictive Model Project</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Developed a machine learning model to predict [outcome] using [dataset]. Achieved [X%] accuracy through feature engineering and ensemble methods.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-type">Data Visualization</div>
+                        <h3>Interactive Dashboard</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Created an interactive visualization dashboard to explore [dataset/topic]. Enables users to filter, compare, and discover patterns in the data.</p>
+                        <div class="tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Tableau</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-type">Research</div>
+                        <h3>Research Study Title</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Conducted research on [topic] using statistical analysis and data mining techniques. Findings published in [journal/conference].</p>
+                        <div class="tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Statistical Analysis</span>
+                            <span class="tag">SPSS</span>
+                            <span class="tag">Research Methods</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">Read Paper</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-type">Machine Learning</div>
+                        <h3>NLP Analysis Project</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Applied natural language processing techniques to analyze [text data]. Implemented sentiment analysis and topic modeling to extract insights.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLTK</span>
+                            <span class="tag">spaCy</span>
+                            <span class="tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#" class="btn btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python (NumPy, Pandas, Scikit-learn)</li>
+                        <li>R (tidyverse, ggplot2)</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Supervised & Unsupervised Learning</li>
+                        <li>Deep Learning (TensorFlow, PyTorch)</li>
+                        <li>Natural Language Processing</li>
+                        <li>Model Evaluation & Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Plotly & D3.js</li>
+                        <li>Matplotlib & Seaborn</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Research & Analysis</h3>
+                    <ul>
+                        <li>Statistical Analysis</li>
+                        <li>Experimental Design</li>
+                        <li>A/B Testing</li>
+                        <li>Technical Writing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="contact">
+        <h2 style="color: white; border: none;">Get In Touch</h2>
+        <div class="contact-info">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://yourwebsite.com" target="_blank">Website</a>
+        </div>
+        <p style="margin-top: 2rem; opacity: 0.7;">© 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
