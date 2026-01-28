@@ -1,4 +1,4 @@
-baseURL = "https://github.com/whps0620.github.io/"
+baseURL = "https://whps0620.github.io/"
 title = "Hey it's Windy :)"
 theme = "hugo-coder"
 languageCode = "en"
@@ -26,7 +26,7 @@ author = "Windy Yeh"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Windy Yeh's personal website"
 keywords = "blog,developer,personal"
-info = ["Developer", "Foodies"]
+# info = ["Developer", "Foodies"]
 # avatarURL = "images/avatar.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -152,7 +152,7 @@ url = "https://github.com/whps0620/"
 name = "LinkedIn"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 2
-url = "linkedin.com/in/ting-yu-yeh-ba7b3b197"
+url = "https://linkedin.com/in/ting-yu-yeh-ba7b3b197"
 
 [[params.social]]
 name = "Medium"
@@ -189,7 +189,7 @@ title = "Windy Yeh"
 
 [languages.zh-tw.params]
 author = "Windy Yeh"
-info = "Windy 的個人網站"
+# info = "Windy 的個人網站"
 description = "我的個人網站"
 keywords = "blog,desenvolvedor,pessoal"
 
