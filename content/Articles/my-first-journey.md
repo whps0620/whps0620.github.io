@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2026-01-29T11:47:16+01:00
-title = ""
+title = "My first Journey"
 description = ""
 slug = ""
 authors = []
