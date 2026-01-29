@@ -8,7 +8,7 @@ authors = []
 categories = []
 externalLink = ""
 series = []
-image: "/images/co-occurence.jpg"
+image = "/images/co-occurence.jpg"
 +++
 
 ### 料理之所以美味，是因為不同地區有不同的魔法

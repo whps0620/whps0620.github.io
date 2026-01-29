@@ -8,7 +8,7 @@ authors = []
 categories = []
 externalLink = ""
 series = []
-image: "/images/co-occurence.jpg"
+image =  "/images/co-occurence.jpg"
 +++
 
 ### The Expat’s Struggle: Why Do We Crave Home?
