@@ -26,7 +26,7 @@ image: "/images/co-occurence.jpg"
 [Souce: Heston Blumental Scallop-caviar-white-chocolate](https://reportergourmet.com/upload/multimedia/Everdure-Recipecard-Scallop-caviar-white-chocolate-ph-Joe-Sarah.jpg)
 
 
---- 
++++ 
 
 
 **研究發現：西方愛「物以類聚」，東方愛「互補對抗」**
@@ -54,7 +54,7 @@ image: "/images/co-occurence.jpg"
   * **北美菜：** 結構最分散，透過蔬菜、香料、添加劑和起司，把各種不相干的食材（像蘑菇與烘焙品）湊在一起。
 
 
----
++++
 
 **食譜規模與文化小知識**
 
@@ -64,7 +64,7 @@ image: "/images/co-occurence.jpg"
     * **斯堪地那維亞：**因為氣候冷，蔬菜和香草用得很少。
     * **美、加、澳：**因為這些國家是移民熔爐，口味變得很均衡，沒有哪種極端的配對偏好。
 
----
++++
 
 **大蒜：全世界的共通語言？**
 這份研究最有趣的發現是「食材出現圖」。雖然拉丁美洲跟南歐隔著大西洋，但同樣愛用洋蔥、番茄和大蒜。
@@ -73,7 +73,7 @@ image: "/images/co-occurence.jpg"
 
 ![食材出現圖分析](/images/co-occurence.jpg)
 
----
++++
 
 ### 參考文獻
 1. Ahn, Y. Y., Ahnert, S. E., Bagrow, J. P., & Barabási, A. L. (2011). **Flavor network and the principles of food pairing.** *Scientific Reports*, 1(1), 196. [點此閱讀原文](https://www.nature.com/articles/srep00196)

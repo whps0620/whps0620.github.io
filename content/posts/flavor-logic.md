@@ -21,8 +21,7 @@ A famous British chef Heston Blumenthal once served white chocolate on scallops 
 And the other example is the classic duo : dark chocolate and blue cheese, which share at least 73 flavor compounds. This hypothesis is the secret weapon for Fine Dining chefs looking for the next "weird but wonderful" combo.
 
 
---- 
-
++++
 
 ### Global Cuisines: "Birds of a Feather" vs. "Opposites Attract"
 While digging through some research, I found a study that used this hypothesis to analyze global cuisines. We all know every culture cooks differently, but seeing it mapped out scientifically is fascinating.
@@ -33,7 +32,7 @@ The study broke the world down into **four main groups**, and the results are pr
 * **Indian Cuisine:** This is the *"Opposites Attract*" champion. Because of the heavy use of spices, Indian food shows a strong "negative pairing" trait. Spices are the glue holding everything together, but their chemical makeup is light-years away from the main ingredients like meat or veggies.
 
 
----
++++
 
 
 ### The "Star" vs. The "Spiderweb"
@@ -46,7 +45,7 @@ If you map out these flavor networks, you see very different "personalities" in 
 - France: A very balanced relationship between **dairy (mostly cheese), meat, and fungi** (mushrooms).
 - Italy: **Herbs and spices** share the throne, which—interestingly—makes it a bit similar to Thai cuisine.
 
----
++++
 
 
 ### Recipe Complexity: Less is More?
@@ -55,7 +54,7 @@ If you map out these flavor networks, you see very different "personalities" in 
 - The "New World" (US, Canada, Australia): Because of the "Melting Pot" effect from immigration, their pairing preferences are super balanced. They don't have the extreme "positive" or "negative" biases of the older cultures.
 
 
----
++++
 
 
 ### Is Garlic the World’s Universal Language?
@@ -64,7 +63,7 @@ But here’s the kicker: East Asia, Latin America, and Southern Europe all overl
 It turns out garlic is the ultimate diplomat. No matter where you’re from or how your "flavor logic" works, we can all agree on one thing: you can never have too much garlic.
 
 ![Co-occurrence map of global ingredients](/images/co-occurence.jpg)
----
++++
 
 ### 參考文獻
 1. Ahn, Y. Y., Ahnert, S. E., Bagrow, J. P., & Barabási, A. L. (2011). **Flavor network and the principles of food pairing.** *Scientific Reports*, 1(1), 196. [Click here for more](https://www.nature.com/articles/srep00196)
