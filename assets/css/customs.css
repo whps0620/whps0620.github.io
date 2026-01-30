@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* English/Numbers first, then Chinese Serif fallbacks */
+  --font-mixed-stack: "Roboto Mono", "Chiron Sung HK", "Chiron Sung HK WS", "Noto Serif TC", serif;
+}
+
+/* 1. Change the Body Text Size and Font */
+body {
+  font-family: var(--font-mixed-stack) !important;
+  font-size: 1.7rem;   /* Increased from default */
+  line-height: 1.8;
+}
+
+/* 2. Target ALL Headings specifically */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mixed-stack) !important;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* 3. Adjust Specific Heading Sizes */
+h1 { font-size: 2.7rem; } /* Very large for main titles */
+h2 { font-size: 2.3rem; } /* For section titles like "Flavor Logic" */
+h3 { font-size: 2.0rem; } /* For sub-sections */
+h4 { font-size: 1.6rem; } /* For sub-sections */
+
+/* 4. Fix for Navigation Menu */
+.navigation a, .navigation span {
+  font-family: var(--font-family-mono), var(--font-family-chinese) !important;
+  font-size: 1.6rem;
+}
+
+/* Tighten spacing for H4 specifically */
+h4 {
+  margin-top: 1.0rem !important;    /* Space above the heading */
+  margin-bottom: 0.2rem !important; /* Space between heading and the text below */
+  line-height: 1.2 !important;      /* Tightens the line height of the heading itself */
+}
+
+/* Specifically target English words inside Chinese text if they are in <em> or <strong> tags */
+em, strong {
+  font-family: var(--font-mixed-stack) !important;
+}
